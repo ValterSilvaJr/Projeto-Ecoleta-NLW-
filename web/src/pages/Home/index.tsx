@@ -1,6 +1,6 @@
-import React from 'react';
-import { FiLogIn } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import React from '../../../node_modules/@types/react';
+import { FiLogIn } from '../../../node_modules/react-icons/fi';
+import { Link } from '../../../node_modules/@types/react-router-dom';
 
 import './styles.css';
 import logo from "../../assets/logo.svg";
