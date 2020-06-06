@@ -1,5 +1,5 @@
-import React from '../node_modules/@types/react';
-import { Route, BrowserRouter } from'../node_modules/@types/react-router-dom';
+import React from 'react';
+import { Route, BrowserRouter } from'react-router-dom';
 
 import Home from './pages/Home';
 import CreatePoint from './pages/CreatePoint';

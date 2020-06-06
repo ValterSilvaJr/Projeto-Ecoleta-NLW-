@@ -10,7 +10,6 @@ export default {
             const filename = `${hash}-${file.originalname}`;
 
             callback(null, filename);
-            console.log(filename)
         }
     })
 }

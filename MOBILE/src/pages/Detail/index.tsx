@@ -37,8 +37,6 @@ const Detail = () => {
       setData(response.data);
     })
   }, []);
-
-  console.log(route.params)
   
   function handleNavigateBack() {
     navigation.goBack();

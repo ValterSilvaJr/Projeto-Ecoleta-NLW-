@@ -1,10 +1,10 @@
-import React, { useEffect, useState, ChangeEvent, FormEvent} from '../../../node_modules/@types/react';
-import { Link, useHistory } from '../../../node_modules/@types/react-router-dom';
-import { FiArrowLeft} from '../../../node_modules/react-icons/fi';
-import { Map, Marker, TileLayer } from '../../../node_modules/@types/react-leaflet';
+import React, { useEffect, useState, ChangeEvent, FormEvent} from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import { FiArrowLeft} from 'react-icons/fi';
+import { Map, Marker, TileLayer } from 'react-leaflet';
 import api from '../../services/api';
-import axios from '../../../node_modules/axios';
-import { LeafletMouseEvent } from '../../../node_modules/@types/leaflet';
+import axios from 'axios';
+import { LeafletMouseEvent } from 'leaflet';
 
 import Dropzone from '../../components/Dropzone';
 import './styles.css';
@@ -108,7 +108,7 @@ const CreatePoint = () => {
     }
 
     function handleSelectItem(id: number){
-        const alreadySelected = selectedItems.findIndex(item => item == id);
+        const alreadySelected = selectedItems.findIndex(item => item === id);
 
         if(alreadySelected >= 0){
            const filteredItems = selectedItems.filter(item => item !== id);
